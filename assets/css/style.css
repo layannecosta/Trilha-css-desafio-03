@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Estilos gerais */
+* {
+  font-family: roboto;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background: #f9f9f9;
+  /* width: 1440px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas: "aside section";
+  justify-content: start;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000;
+  line-height: normal;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #515151;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do menu de navegação superior */
+
+nav {
+  grid-area: navbar;
+  display: grid;
+  grid-template: "navleft navcenter navright" 56px;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+  padding: 0 24px 0 24px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-left {
+  align-self: center;
+  justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.nav-left img {
+  padding-left: 32px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+}
+
+#nav-search-box {
+  border: 1px solid #ccc;
+  background: #fff;
+  width: 348px;
+  height: 40px;
+  flex-shrink: 0;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#nav-search-button {
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  width: 57px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.nav-right {
+  justify-self: center;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-right svg {
+  margin-right: 24px;
+}
+
+/* Estilos do menu de navegação lateral (sidebar) */
+
+aside {
+  grid-area: aside;
+  padding: 24px;
+}
+
+aside h2 {
+  font-family: roboto;
+  color: #000;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+aside ul {
+  padding: 0;
+}
+
+aside svg {
+  padding-right: 16px;
+}
+.Inicio {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+
+.Explorar {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+
+.Inscricoes {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+.YouTube-Music {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+.Videos-que-gostei {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+.assistir-mais-tarde {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+.Downloads {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+.Filmes {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+.Aprender {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+.Esportes {
+  display: grid;
+  grid-template-areas: "icone nome";
+  place-content: start;
+  place-items: center;
+  margin-bottom: 22px;
+}
+
+/* Estilos do conteúdo principal */
+
+section {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: start;
+  margin-top: 20px;
+}
+
+.card {
+  box-sizing: border-box;
+  display: grid;
+  justify-self: center;
+  width: 250px;
+  height: 200px;
+  margin: 0;
+  gap: 12px 10px;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas:
+    "card-thumb card-thumb"
+    "card-logo card-titulo"
+    ". card-infos";
+  margin-bottom: 60px;
+}
+
+.card-thumb {
+  grid-area: card-thumb;
+}
+
+.card-logo {
+  grid-area: card-logo;
+}
+
+.card-titulo {
+  grid-area: card-titulo;
+  align-self: center;
+}
+
+.card-infos {
+  grid-area: card-infos;
+}
